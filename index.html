@@ -20,7 +20,7 @@
             background-color: #007bff;
             padding: 20px 0;
             text-align: center;
-            color: black; /* Changed text color to black */
+            color: black;
             position: fixed;
             top: 0;
             left: 0;
@@ -51,11 +51,11 @@
             padding: 20px;
             box-sizing: border-box;
             color: black;
-	    font-weight: bold;
+            font-weight: bold;
         }
 
         .intro-section h1 {
-            font-family: 'Pacifico', cursive;
+            font-family: pacifico, cursive;
             font-size: 48px;
             margin: 0;
         }
@@ -103,9 +103,9 @@
         }
 
         .features-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
         .feature {
@@ -114,11 +114,15 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            flex: 1 1 calc(25% - 20px);
+            margin-bottom: 20px;
+            box-sizing: border-box;
         }
 
         .feature img {
-            width: 100%;
-            height: auto;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
             margin-bottom: 15px;
         }
 
@@ -189,6 +193,15 @@
             .feature p {
                 font-size: 14px;
             }
+
+            .features-container {
+                flex-direction: column;
+            }
+
+            .feature {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -212,24 +225,24 @@
             <h2>Key Features</h2>
             <div class="features-container">
                 <div class="feature">
-                    <img src="images/Health Plan Icon.jpeg" alt="Personalized Health Plans">
+                    <img src="images/Health Plan Icon.jpeg">
                     <h3>Personalized Health Plans</h3>
                     <p>Receive custom health plans tailored to your needs.</p>
                 </div>
                 <div class="feature">
-                    <img src="images/Medication Tracking Icon.jpeg" alt="Medication Tracking">
+                    <img src="images/Medication Tracking Icon.jpeg">
                     <h3>Medication Tracking</h3>
                     <p>Keep track of your medications and receive reminders.</p>
                 </div>
                 <div class="feature">
-                    <img src="images/Appointment Reminders Icon.png" alt="Appointment Reminders">
+                    <img src="images/Appointment Reminders Icon.png">
                     <h3>Appointment Reminders</h3>
                     <p>Never miss an appointment with our reminders.</p>
-                </div>    
-                <div class="feature"> <!-- Fixed the typo -->
-                    <img src="images/Motivational Support Icon.jpeg" alt="Motivational Support">
-                    <h3>Get inspirational motivational support.</h3>
-
+                </div>
+                <div class="feature">
+                    <img src="images/Motivational Support Icon.jpeg">
+                    <h3>Motivational Support</h3>
+                    <p>Get inspirational motivational support.</p>
                 </div>
             </div>
         </section>
@@ -241,7 +254,7 @@
                 <a href="https://www.linkedin.com/in/nana-khuzwayo123" target="_blank">LinkedIn</a>
                 <a href="https://github.com/Nanakzy" target="_blank">GitHub</a>
             </div>
-            <p>Check out the project on <a href="https://github.com/nanakhuzwayo/health-companion-app" target="_blank">GitHub</a>.</p>
+            <p>Check out the project on <a href="https://github.com/Nanakzy/Health-Companion-App" target="_blank">GitHub</a>.</p>
         </section>
     </main>
 
