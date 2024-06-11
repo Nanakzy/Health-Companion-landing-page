@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Companion App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            width: 100%;
+            background-color: #007bff;
+            padding: 20px 0;
+            text-align: center;
+            color: black; /* Changed text color to black */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .intro-section {
+            height: 100vh;
+            background: url('images/cover-image.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        .intro-section h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .intro-section p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .intro-section a.button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .intro-section a.button:hover {
+            background-color: #218838;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 100px; /* Offset for fixed header */
+        }
+
+        .features-section, .about-section {
+            margin-bottom: 60px;
+        }
+
+        .features-section h2, .about-section h2 {
+            font-family: 'Pacifico', cursive;
+            color: #007bff;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .features-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin: 10px 0;
+            color: #007bff;
+            font-size: 24px;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .about-section .team-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .about-section .team-links a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        footer {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+        }
+
+        @media (max-width: 600px) {
+            header nav a {
+                font-size: 14px;
+            }
+
+            .intro-section h1 {
+                font-size: 36px;
+            }
+
+            .intro-section p {
+                font-size: 18px;
+            }
+
+            .intro-section a.button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+
+            .features-section h2, .about-section h2 {
+                font-size: 28px;
+            }
+
+            .feature h3 {
+                font-size: 20px;
+            }
+
+            .feature p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="intro-section">
+        <h1>Health Companion App</h1>
+        <p>Empowering you to manage your health and wellness journey</p>
+        <a href="https://healthcompanion.nanakzy.tech/" class="button">Launch App</a>
+    </section>
+
+    <main>
+        <section id="features" class="features-section">
+            <h2>Key Features</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <img src="images/Health Plan Icon.jpeg" alt="Personalized Health Plans">
+                    <h3>Personalized Health Plans</h3>
+                    <p>Receive custom health plans tailored to your needs.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/Medication Tracking Icon.jpeg" alt="Medication Tracking">
+                    <h3>Medication Tracking</h3>
+                    <p>Keep track of your medications and receive reminders.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/Appointment Reminders Icon.png" alt="Appointment Reminders">
+                    <h3>Appointment Reminders</h3>
+                    <p>Never miss an appointment with our reminders.</p>
+                </div>    
+                <div class="feature"> <!-- Fixed the typo -->
+                    <img src="images/Motivational Support Icon.jpeg" alt="Motivational Support">
+                    <h3>Get inspirational motivational support.</h3>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>Health Companion App was inspired by the need to provide individuals living with chronic diseases a supportive tool for managing their health effectively. The project was developed by Nana Khuzwayo as a Portfolio Project for ALX SE.</p>
+            <div class="team-links">
+                <a href="https://www.linkedin.com/in/nana-khuzwayo123" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Nanakzy" target="_blank">GitHub</a>
+            </div>
+            <p>Check out the project on <a href="https://github.com/nanakhuzwayo/health-companion-app" target="_blank">GitHub</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Health Companion App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
