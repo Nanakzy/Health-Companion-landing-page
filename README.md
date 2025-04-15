@@ -1,3 +1,4 @@
+https://nanakzy.github.io/Health-Companion-landing-page/
 This is the landing page for health companion app
 Click on "features" to views all the features the app offers
 Click on "About" to view app details
